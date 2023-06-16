@@ -12,6 +12,14 @@ function toggleMode() {
     img.setAttribute("src", "./assets/avatar-light.png")
   } else {
     //se tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/Avatar.png")
+  }
+
+  if (html.classList.contains("light")) {
+    //se tiver light mode, adicionar a imagem Light
+    alt.setAttribute("alt", "Bruna de óculos de sol")
+  } else {
+    //se tiver sem light mode, manter a imagem normal
+    alt.setAttribute("alt", "Foto de Bruna sorrindo, usando camisa preta")
   }
 }
